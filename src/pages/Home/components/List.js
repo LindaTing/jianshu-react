@@ -14,7 +14,7 @@ class List extends Component {
 
                             <li key={item.get("id")}>
                                 <div className="content">
-                                    <Link to="/detail"><h5 className="title">{item.get("title")}</h5></Link>
+                                    <Link to={"/detail/"+item.get("id")}><h5 className="title">{item.get("title")}</h5></Link>
                                     <p className="detail">{item.get("detail")}</p>
                                     <p className="meta">
                                             <span className="price"><i

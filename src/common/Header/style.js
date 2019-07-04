@@ -108,6 +108,7 @@ export const NavSearch = styled.input.attrs({placeholder: '搜索'})`
 export const SearchInfo = styled.ul`
     width:200px;
     position: absolute;
+    z-index:1;
     left: 0;
     top:50px;
     background-color: #fff;
