@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import * as actionCreator from './store/actionCreator';
+import {withRouter} from 'react-router-dom';
 import {
     DetailWarp,
     Title
@@ -30,4 +31,4 @@ const mapDispatch = (dispatch)=>({
         dispatch(actionCreator.getDetailData(id))
     }
 })
-export default connect(mapStateToProps, mapDispatch)(Detail);
+export default connect(mapStateToProps, mapDispatch)(withRouter(Detail));

@@ -6,7 +6,7 @@ import {Provider} from 'react-redux';
 import store from './store'
 import {BrowserRouter, Route} from 'react-router-dom';
 import Home from './pages/Home';
-import Detail from './pages/Detail';
+import Detail from './pages/Detail/loadable.js';
 import Login from './pages/Login';
 import Write from './pages/Write';
 
